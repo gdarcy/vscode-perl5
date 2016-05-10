@@ -1,0 +1,26 @@
+{
+    "name": "perl",
+    "displayName": "perl5",
+    "description": "Perl5 language support",
+    "version": "0.0.1",
+    "publisher": "gdarcy",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "perl",
+            "aliases": ["Perl", "perl"],
+            "extensions": [".pl",".pm",".pod",".t",".PL",".psgi",".vcl"],
+            "configuration": "./perl.configuration.json"
+        }],
+        "grammars": [{
+            "language": "perl",
+            "scopeName": "source.perl",
+            "path": "./syntaxes/perl.tmLanguage"
+        }]
+    }
+}
